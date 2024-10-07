@@ -5,7 +5,7 @@ const dotenv = require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
-x
+
 // Enable CORS for all requests
 app.use(cors());
 app.use(express.json());
@@ -70,6 +70,7 @@ app.use(express.static(__dirname));
 // API endpoint to handle chat messages
 app.post('/chat', async (req, res) => {
     try {
+		console.log("I came here.....")
         const userInput = req.body?.userInput;
         if (!userInput) {
             return res.status(400).json({ error: 'Invalid request: Missing user input.' });
