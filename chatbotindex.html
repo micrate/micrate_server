@@ -248,17 +248,11 @@
     </form>
 </div>
 
-<!-- Light/Dark Mode Toggle -->
-<button id="theme-toggle
-
-">Toggle Theme</button>
-
 <script>
     const chatHistory = document.getElementById('chat-history');
     const userInput = document.getElementById('user-input');
     const chatForm = document.getElementById('chat-form');
     const loader = document.getElementById('loader');
-    const themeToggle = document.getElementById('theme-toggle');
 
     chatForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -302,11 +296,6 @@
     function hideLoader() {
         loader.style.display = 'none';
     }
-
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-mode');
-        document.body.classList.toggle('dark-mode');
-    });
 
     // Refresh and start a new chat
     document.getElementById('refreshNewChat').addEventListener('click', () => {
