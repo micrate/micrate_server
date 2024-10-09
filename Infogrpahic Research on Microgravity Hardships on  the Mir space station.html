@@ -60,6 +60,26 @@
             padding-top: 40vh;
             animation: floatTitle 5s infinite ease-in-out;
         }
+
+
+        .talk-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #fff;
+      background-color: #c6a900; /* Dark yellow color */
+      border: none;
+      border-radius: 25px; /* Rounded corners */
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      position: relative;
+      z-index: 2; /* Ensure the button stays above the overlay */
+    }
+    .talk-button:hover {
+      background-color: #b59e00; /* Slightly darker on hover */
+    }
         @keyframes floatTitle {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-20px); }
